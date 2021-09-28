@@ -7,12 +7,8 @@ import matplotlib.pyplot as plt
 from moviepy.video.io.ffmpeg_tools import ffmpeg_extract_subclip
 
 # cut video
-ffmpeg_extract_subclip(
-    "C:\\Users\\isevryugin\\Downloads\\2021_0903_124703_016.MP4",
-    0,
-    30,
-    targetname="C:\\Users\\isevryugin\\Downloads\\2021.MP4",
-)
+ffmpeg_extract_subclip("C:\\Users\\isevryugin\\Downloads\\2021_0903_124703_016.MP4",
+                       0, 30, targetname="C:\\Users\\isevryugin\\Downloads\\2021.MP4")
 
 # create frames
 vidcap = cv2.VideoCapture("C:\\Users\\isevryugin\\Downloads\\2021.MP4")
@@ -20,19 +16,14 @@ success, image = vidcap.read()
 count = 0
 while success:
     if count % 1 == 0:
-        cv2.imwrite(
-            "C:\\Users\\isevryugin\\Dropbox\\_Work\\BigData\\CarDetection\\frames2\\frame%d.jpg"
-            % count,
-            image,
-        )  # save frame as JPEG file
+        cv2.imwrite("C:\\Users\\isevryugin\\Dropbox\\_Work\\BigData\\CarDetection\\frames2\\frame%d.jpg" %
+                    count, image,)  # save frame as JPEG file
     success, image = vidcap.read()
     count += 1
 
 # get file names of the frames
 col_frames = os.listdir(
-    r"C:\Users\isevryugin\Dropbox\_Work\BigData\CarDetection\frames2"
-)
-
+    r"C:\Users\isevryugin\Dropbox\_Work\BigData\CarDetection\frames2")
 
 # sort file names
 col_frames.sort(key=lambda f: int(re.sub("\D", "", f)))
@@ -43,11 +34,9 @@ col_images = []
 for i in col_frames:
     # read the frames
     img = cv2.imread(
-        r"C:\Users\isevryugin\Dropbox\_Work\BigData\CarDetection\frames2\{}".format(i)
-    )
+        r"C:\Users\isevryugin\Dropbox\_Work\BigData\CarDetection\frames2\{}".format(i))
     # append the frames to the list
     col_images.append(img)
-
 
 # plot 13th frame
 i = 13
@@ -95,8 +84,7 @@ plt.imshow(dilated)
 
 # find contours
 contours, hierarchy = cv2.findContours(
-    thresh.copy(), cv2.RETR_TREE, cv2.CHAIN_APPROX_NONE
-)
+    thresh.copy(), cv2.RETR_TREE, cv2.CHAIN_APPROX_NONE)
 
 valid_cntrs = []
 
@@ -111,8 +99,10 @@ len(valid_cntrs)
 dmy = col_images[13].copy()
 
 cv2.drawContours(dmy, valid_cntrs, -1, (127, 200, 0), 2)
-cv2.line(dmy, (x_min_cont, y_min_cont), (x_max_cont, y_min_cont), (100, 255, 255), 5)
-cv2.line(dmy, (x_min_cont, y_min_cont), (x_min_cont, y_max_cont), (100, 255, 255), 5)
+cv2.line(dmy, (x_min_cont, y_min_cont),
+         (x_max_cont, y_min_cont), (100, 255, 255), 5)
+cv2.line(dmy, (x_min_cont, y_min_cont),
+         (x_min_cont, y_max_cont), (100, 255, 255), 5)
 plt.imshow(dmy)
 # plt.show()
 
@@ -140,8 +130,7 @@ for i in range(len(col_images) - 1):
 
     # find contours
     contours, hierarchy = cv2.findContours(
-        dilated.copy(), cv2.RETR_TREE, cv2.CHAIN_APPROX_NONE
-    )
+        dilated.copy(), cv2.RETR_TREE, cv2.CHAIN_APPROX_NONE)
 
     # shortlist contours appearing in the detection zone
     valid_cntrs = []
@@ -158,24 +147,15 @@ for i in range(len(col_images) - 1):
     dmy = col_images[i].copy()
     cv2.drawContours(dmy, valid_cntrs, -1, (127, 200, 0), 2)
 
-    cv2.putText(
-        dmy,
-        "vehicles detected: " + str(len(valid_cntrs)),
-        (x_min_cont, y_min_cont - 25),
-        font,
-        0.6,
-        (0, 180, 0),
-        2,
-    )
-    cv2.line(
-        dmy, (x_min_cont, y_min_cont), (x_max_cont, y_min_cont), (100, 255, 255), 5
-    )
-    cv2.line(
-        dmy, (x_min_cont, y_min_cont), (x_min_cont, y_max_cont), (100, 255, 255), 5
-    )
+    cv2.putText(dmy, "vehicles detected: " + str(len(valid_cntrs)),
+                (x_min_cont, y_min_cont - 25), font, 0.6, (0, 180, 0), 2,)
+    cv2.line(dmy, (x_min_cont, y_min_cont),
+             (x_max_cont, y_min_cont), (100, 255, 255), 5)
+    cv2.line(dmy, (x_min_cont, y_min_cont),
+             (x_min_cont, y_max_cont), (100, 255, 255), 5)
     cv2.imwrite(pathIn + str(i) + ".png", dmy)
 
-    # specify video name
+# specify video name
 pathOut = "C:\\Users\\isevryugin\\Dropbox\\_Work\\BigData\\CarDetection\\video\\vehicle_detection_v3.mp4"
 
 # specify frames per second
@@ -197,7 +177,6 @@ for i in range(len(files)):
     # inserting the frames into an image array
     frame_array.append(img)
 
-    # out = cv2.VideoWriter('output.avi',fourcc, 20.0, (640,480)
     out = cv2.VideoWriter(pathOut, cv2.VideoWriter_fourcc(*"mp4v"), fps, size)
 
 for i in range(len(frame_array)):
