@@ -24,7 +24,7 @@ Point = namedtuple("Point", ["x", "y"])  # Convenience class for coordinates
 # Constants #
 #############
 
-COL_BACKGROUND = 5
+COL_BACKGROUND = 3
 COL_BODY = 11
 COL_HEAD = 7
 COL_DEATH = 8
