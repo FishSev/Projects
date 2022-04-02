@@ -1,0 +1,92 @@
+{
+  "main": {
+    "id": "7bf388c25bd6c650",
+    "type": "split",
+    "children": [
+      {
+        "id": "68d32fc893e4ddc0",
+        "type": "leaf",
+        "state": {
+          "type": "graph",
+          "state": {}
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "07236902dd0e7067",
+    "type": "split",
+    "children": [
+      {
+        "id": "ebb07b002437c683",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3151453e3aac4a25",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "a2f2a71407ba709b",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:#hello",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "1b21d683d0116ca9",
+    "type": "split",
+    "children": [
+      {
+        "id": "1f392a160f6ab6a5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c8aa57b6dfec0017",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "68d32fc893e4ddc0",
+  "lastOpenFiles": [
+    "this part.md",
+    "typo.md",
+    "info.md"
+  ]
+}
