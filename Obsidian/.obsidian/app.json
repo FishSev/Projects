@@ -1,5 +1,11 @@
 {
   "legacyEditor": false,
   "livePreview": true,
-  "alwaysUpdateLinks": true
+  "alwaysUpdateLinks": true,
+  "showLineNumber": true,
+  "spellcheck": true,
+  "spellcheckLanguages": [
+    "ru",
+    "en-US"
+  ]
 }

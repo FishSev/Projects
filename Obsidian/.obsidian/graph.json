@@ -5,33 +5,18 @@
   "showAttachments": false,
   "hideUnresolved": false,
   "showOrphans": true,
-  "collapse-color-groups": false,
-  "colorGroups": [
-    {
-      "query": "tag: lol",
-      "color": {
-        "a": 1,
-        "rgb": 14701138
-      }
-    },
-    {
-      "query": "tag: you2",
-      "color": {
-        "a": 1,
-        "rgb": 8708178
-      }
-    }
-  ],
+  "collapse-color-groups": true,
+  "colorGroups": [],
   "collapse-display": false,
-  "showArrow": true,
-  "textFadeMultiplier": 0.4,
-  "nodeSizeMultiplier": 1.3982905982906,
-  "lineSizeMultiplier": 2.06837606837607,
-  "collapse-forces": true,
-  "centerStrength": 0.837606837606838,
-  "repelStrength": 0,
-  "linkStrength": 0.521367521367521,
-  "linkDistance": 255,
-  "scale": 1,
-  "close": false
+  "showArrow": false,
+  "textFadeMultiplier": 0,
+  "nodeSizeMultiplier": 1,
+  "lineSizeMultiplier": 1,
+  "collapse-forces": false,
+  "centerStrength": 0.518713248970312,
+  "repelStrength": 10,
+  "linkStrength": 1,
+  "linkDistance": 250,
+  "scale": 0.7514342322277585,
+  "close": true
 }

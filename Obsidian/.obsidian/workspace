@@ -4,7 +4,7 @@
     "type": "split",
     "children": [
       {
-        "id": "68d32fc893e4ddc0",
+        "id": "e3a7fbf69f2c8f59",
         "type": "leaf",
         "state": {
           "type": "graph",
@@ -45,8 +45,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -83,10 +82,15 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "68d32fc893e4ddc0",
+  "active": "e3a7fbf69f2c8f59",
   "lastOpenFiles": [
+    "ПМО - 4. Статистическая теория принятия решений.md",
+    "ПМО - 3. Линейная регрессия.md",
+    "ПМО - 2. Сопряженные априорные распределения.md",
+    "ПМО - 1. Введение в байесовский вывод.md",
+    "Untitled.md",
     "this part.md",
-    "typo.md",
-    "info.md"
+    "2022.md",
+    "typo.md"
   ]
 }
