@@ -7,8 +7,12 @@
         "id": "e3a7fbf69f2c8f59",
         "type": "leaf",
         "state": {
-          "type": "graph",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "Книги/Машинное обучение. Конструирование признаков/Глава 1. Процесс машиннго обучния.md",
+            "mode": "source",
+            "source": false
+          }
         }
       }
     ],
@@ -36,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#hello",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -45,11 +49,12 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 255
   },
   "right": {
     "id": "1b21d683d0116ca9",
@@ -65,6 +70,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Книги/Машинное обучение. Конструирование признаков/Глава 1. Процесс машиннго обучния.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -84,11 +90,13 @@
   },
   "active": "e3a7fbf69f2c8f59",
   "lastOpenFiles": [
+    "Книги/Машинное обучение. Конструирование признаков/Глава 1. Процесс машиннго обучния.md",
+    "Made BigData/HW2.md",
+    "Надо разобраться.md",
     "ПМО - 4. Статистическая теория принятия решений.md",
     "ПМО - 3. Линейная регрессия.md",
     "ПМО - 2. Сопряженные априорные распределения.md",
     "ПМО - 1. Введение в байесовский вывод.md",
-    "Untitled.md",
     "this part.md",
     "2022.md",
     "typo.md"
